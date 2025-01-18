@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel-"stylesheet" href="style.css"></a>
+    <link rel="stylesheet" href="C:\Users\Desmond\Documents\GitHub\dsc106-portfolio\style.css"></a>
 </head>
 <body>
-    <nav>
-        <a href="https://desmondvu.github.io/dsc106-portfolio/">Home</a>|
-         <a href="https://desmondvu.github.io/dsc106-portfolio/contact/index.html">Contact</a>
-         <a href="https://desmondvu.github.io/dsc106-portfolio/projects/index.html">Projects</a>
-         <a href="https://desmondvu.github.io/dsc106-portfolio/resume/index.html">Resume</a>
-         <a href="https://github.com/desmondvu" target="blank">Github</a>
-    </nav>
-    <h1>Desmond Vu</h1>
-    <a href="linkedin.com/in/desmond-vu-512562301/" target="blank">Linkedin</a>
-    <p><br /></p>
+    <nav class = "nav">
+        <a href="https://desmondvu.github.io/dsc106-portfolio/">Home</a>
+        <a href="https://desmondvu.github.io/dsc106-portfolio/contact/index.html">Contact</a>
+        <a href="https://desmondvu.github.io/dsc106-portfolio/projects/index.html">Projects</a>
+        <a class = "current" href="https://desmondvu.github.io/dsc106-portfolio/resume/index.html">Resume</a>
+        <a href="https://github.com/desmondvu" target="blank">Github</a>
+    </nav> 
+    <header>
+        <h1>Desmond Vu</h1>
+        <p>Student at University of California, San Diego | <a href="linkedin.com/in/desmond-vu-512562301/" target="blank">Linkedin</a></p>
+        <p><br /></p>
+    </header>
+
     <section>
         <h2>Education</h2>
-        <p>University of California, San Diego - La Jolla, CA</p>
-        <em>Bachelor of Science in Data Science: <time datetime = "2023-09-01"> Sept. 2023 </time> -- <time datetime = "2026-06-01"> Jun. 2026 </time></em>
-        <p><br />De Anza College - Cupertino, CA</p>
-        <em><time datetime = "2021-09-01"> Sept. 2021 </time> -- <time datetime = "2023-06-01"> Jun. 2023 </time></em>
-        <p><br /></p>
+        <ul>
+            <li>
+                <h3>University of California, San Diego - La Jolla, CA </h3>
+                <p>B.S. in Data Science </br> <em></em><time datetime = "2023-09-01"> Sept. 2023 </time> -- <time datetime = "2026-06-01"> Jun. 2026 </time><em></em></p>
+            </li>
+            <li>
+                <h3>De Anza College - Cupertino, CA</h3>
+                <p><em><time datetime = "2021-09-01"> Sept. 2021 </time> -- <time datetime = "2023-06-01"> Jun. 2023 </time></em></p>
+            </li>
+        </ul>
     </section> 
 
     <section>
         <h2>Experience</h2>
-        <p>Private Math Tutor: Self-employed; Milpitas,CA</p>
-        <em><time datetime = "2021-08-01"> Aug. 2021 </time> -- <time datetime = "2022-06-01"> Jun. 2022 </time></em>
         <ul>
-            <li>Gave in-person 1 on 1 Math tutoring</li>
-            <li>Formulated personalized lesson plans keeping them ahead in class</li>
-            <li>Helped developed study habits and note-taking strategies</li>
-            <li>Taught relevant test taking skills, leading to high grades on exams</li>
+            <li>
+                <h3>Private Math Tutor: Self-employed; Milpitas,CA</h3>
+                <p><em><time datetime = "2021-08-01"> Aug. 2021 </time> -- <time datetime = "2022-06-01"> Jun. 2022 </time></em></p>
+                <ul>
+                    <li>Gave in-person 1 on 1 Math tutoring</li>
+                    <li>Formulated personalized lesson plans keeping them ahead in class</li>
+                    <li>Helped developed study habits and note-taking strategies</li>
+                    <li>Taught relevant test taking skills, leading to high grades on exams</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Volunteer Math Tutor: MathEasy; Milpitas,CA</h3>
+                <p><em><time datetime = "2018-06-01"> Jun. 2021 </time> -- <time datetime = "2019-08-01"> Aug. 2019 </time></em></p>
+                <ul>
+                    <li>Worked in-person with 5 K-12 students with Math</li>
+                    <li>Maintained a productive and fun environment when faced with chaotic tutees</li>
+                    <li>Engaged with material and made it presentable, catering to the different age groups of tutees</li>
+                </ul>
+            </li>
         </ul>
-        <p><br />Volunteer Math Tutor: MathEasy; Milpitas,CA</p>
-        <em><time datetime = "2018-06-01"> Jun. 2021 </time> -- <time datetime = "2019-08-01"> Aug. 2019 </time></em>
-        <ul>
-            <li>Worked in-person with 5 K-12 students with Math</li>
-            <li>Maintained a productive and fun environment when faced with chaotic tutees</li>
-            <li>Engaged with material and made it presentable, catering to the different age groups of tutees</li>
-        </ul>
-        <p><br /></p>
     </section>
 
     <section>
         <h2>Technical Skills</h2>
-        <p>Languages: <em>Java, Python, C/C++, SQL, R, HTML</em></p>
-        <p>Developer Tools: <em>Git, VS Code, Visual Studio, Eclipse</em></p>
-        <p>Libraries: <em>Pandas, NumPy, SkLearn, MatPlotLib, BeautifulSoup4</em></p>
+        <div class="skills">
+            <div>Languages: <em>Java, Python, C/C++, SQL, R, HTML</em></div>
+            <div>Developer Tools: <em>Git, VS Code, Visual Studio, Eclipse</em></div>
+            <div>Libraries: <em>Pandas, NumPy, SkLearn, MatPlotLib, BeautifulSoup4</em></div>
+        </div>
     </section>
 </body>
 </html>
