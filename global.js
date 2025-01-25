@@ -1,14 +1,14 @@
 console.log('IT’S ALIVE!');
-
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
 let pages = [
-    { url: '', title: 'Home' },
-    { url: 'contact/index.html', title: 'Contact'},
-    { url: 'projects/index.html', title: 'Projects' },
-    { url: 'resume/index.html', title: 'Resume'},
+    { url: '../', title: 'Home' },
+    { url: 'contact/', title: 'Contact'},
+    { url: 'projects/', title: 'Projects' },
+    { url: 'resume/', title: 'Resume'},
     { url: 'https://github.com/desmondvu', title: 'Github'}
   ];
 
@@ -20,7 +20,6 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
 
-    const ARE_WE_HOME = document.documentElement.classList.contains('home');
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url;
     }
@@ -28,11 +27,13 @@ for (let p of pages) {
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;  
-   
-    a.classList.toggle(
-        'current',
-        a.host === location.host && a.pathname === location.pathname
-    ); 
+
+    if (a.host === location.host && a.pathname === location.pathname) {
+      a.classList.add('current');
+    }
+    if (a.host != location.host && a.pathname != location.pathname) {
+      a.target = "_blank"
+    }
     nav.append(a);   
   }
 
