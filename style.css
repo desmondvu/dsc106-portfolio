@@ -1,22 +1,25 @@
 html{
   --color-accent:oklch(65% 50% 0);
+  color-scheme: light dark;
+  border-bottom-color: oklch(50% 10% 200 / 40%);
 }
 
 body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
-  }
+}
 
-.nav{
+nav{
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: auto;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ok1ch(80% 3% 200);
+  border-bottom-color: var(--border-color);
 }
 
-.nav a{
+a{
   flex:1;
   text-decoration: none;
   color: inherit;
@@ -24,28 +27,21 @@ body {
   padding: 0.5em;
 }
 
-.nav{
-  display: flex;
-  margin-bottom: auto;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ok1ch(80% 3% 200);
-}
-
-.nav .current{
+a.current{
+  --border-color: oklch(50% 10% 200 / 40%);
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
-  border-bottom-color: #808080;
+  border-bottom-color: var(--border-color);
   padding-bottom: 0.1em;
   font-weight: bold;
 }
 
-.nav a:hover{
+nav a:hover{
   border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input{
@@ -177,4 +173,12 @@ ul li ul li{
   border-radius: 0.25em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   text-align: center;
+}
+
+label.color-scheme{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  font-size: 80%;
+  font-family: inherit;
 }
