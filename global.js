@@ -33,9 +33,11 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;  
 
-    if (a.host === location.host && a.pathname === location.pathname) {
-      a.classList.add('current');
-    }
+    a.classList.toggle(
+      'current',
+      a.host === location.host && a.pathname === location.pathname
+    );
+
     if (a.host !== location.host && a.pathname !== location.pathname) {
       a.target = "_blank"
     }
@@ -97,6 +99,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   for (const project of projects) {
     const article = document.createElement('article');
     
+    const heading = document.createElement(headingLevel);
+    heading.textContent = project.title;
+
     article.innerHTML = `
       <h3>${project.title}</h3>
       <img src="${project.image}" alt="${project.title}">

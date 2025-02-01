@@ -1,73 +1,73 @@
 [
     {
         "title": "Datasaurus Royale",
-        "image": "../images/Datasaur (1).png",
+        "image": "/portfolio/images/Datasaur (1).png",
         "year": "2024",
         "description": "Using Genetic Algorithm and Pygames, my team simulated dinosaur evolution which tested dinosaur traits and behaviors to see which comes out on top."
     },
     {
         "title": "League of Legends: Champion Age Analysis",
-        "image": "../images/League (1).jpg",
+        "image": "/portfolio/images/League (1).jpg",
         "year": "2024",
         "description": "Using data from competitive League of Legends, my partner and I made a model which predicted wins based primarily upon how old a champion was."
     },
     {
         "title": "AI Learns Pokemon Emerald Rogue",
-        "image": "../images/pokemon (1).jpg",
+        "image": "/portfolio/images/pokemon (1).jpg",
         "year": "2025",
         "description": "Pokemon emerald rogue is a randomly generated run based game, and using Gym, I trained an AI using reinforcement learning in order to beat the game."
     },
     {
         "title": "Diabetes Readmission Model",
-        "image": "../images/readmission (1).jpg",
+        "image": "/portfolio/images/readmission (1).jpg",
         "year": "2025",
         "description": "Based upon data of hospital readmission of diabetes patients, my group and I took responsible data science into action and made a fair model."
     },
     {
         "title": "Duckoo Sales Model",
-        "image": "../images/duckoo (1).jpg",
+        "image": "/portfolio/images/duckoo (1).jpg",
         "year": "2025",
         "description": "Duckoo Sales model."
     },
     {
         "title": "Weather Prediction",
-        "image": "../images/rain (1).png",
+        "image": "/portfolio/images/rain (1).png",
         "year": "2023",
         "description": "I don't like the rain."
     },
     {
         "title": "Ai Learns Checkers",
-        "image": "../images/checkers (1).jpg",
+        "image": "/portfolio/images/checkers (1).jpg",
         "year": "2023",
         "description": "Ai learns how to play checkers."
     },
     {
         "title": "Pickleball Sales",
-        "image": "../images/pickleball (1).jpg",
+        "image": "/portfolio/images/pickleball (1).jpg",
         "year": "2023",
         "description": "Pickleball!!!"
     },
     {
         "title": "Marvel Rivals Analysis",
-        "image": "../images/marvel_rivals (1).jpg",
+        "image": "/portfolio/images/marvel_rivals (1).jpg",
         "year": "2025",
         "description": "Marvel Rivals Win Analysis."
     },
     {
         "title": "Manga Rating to Anime",
-        "image": "../images/mal (1).jpg",
+        "image": "/portfolio/images/mal (1).jpg",
         "year": "2024",
         "description": "Model predicting anime rating based off of manga rating."
     },
     {
         "title": "Pikachu Spinning",
-        "image": "../images/pikachu (1).jpg",
+        "image": "/portfolio/images/pikachu (1).jpg",
         "year": "2024",
         "description": "Just Pikachu spinning around."
     },
     {
         "title": "Spotify Something",
-        "image": "../images/spotify (1).png",
+        "image": "/portfolio/images/spotify (1).png",
         "year": "2023",
         "description": "Something about spotify."
     }
