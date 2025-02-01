@@ -65,7 +65,7 @@ form{
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap:1em;
+  gap:3em;
 }
 
 .projects h2{
@@ -168,7 +168,7 @@ ul li ul li{
 .skills div {
   flex: 1 1 45%; /* Flex to fit two items per row */
   padding: 0.5em;
-  background: #f1f5f9;
+  background: color-mix(in oklch, var(--color-accent), canvas 85%);
   border-radius: 0.25em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -180,4 +180,34 @@ label.color-scheme{
   right:1rem;
   font-size: 80%;
   font-family: inherit;
+}
+
+#profile-stats{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 8px;
+  position: relative;
+}
+
+#profile-stats dl{
+  display:contents
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }

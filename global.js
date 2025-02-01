@@ -2,7 +2,6 @@ console.log('IT’S ALIVE!');
 
 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
-const BASE_PATH = '/portfolio';
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
@@ -25,7 +24,7 @@ for (let p of pages) {
     let title = p.title;
 
     if (!ARE_WE_HOME && !url.startsWith('http')) {
-        url = BASE_PATH + '/' + url;
+        url = '../' + url;
     }
     
     let a = document.createElement('a');
@@ -35,7 +34,7 @@ for (let p of pages) {
     if (a.host === location.host && a.pathname === location.pathname) {
       a.classList.add('current');
     }
-    if (a.host != location.host && a.pathname != location.pathname) {
+    if (a.host !== location.host && a.pathname !== location.pathname) {
       a.target = "_blank"
     }
     nav.append(a);   
@@ -104,4 +103,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     
     containerElement.appendChild(article);
   }
+}
+
+export async function fetchGitHubData(username) {
+  // return statement here
+  return fetchJSON(`https://api.github.com/users/${username}`);
 }
