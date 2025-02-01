@@ -2,6 +2,8 @@ console.log('IT’S ALIVE!');
 
 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
+const BASE_PATH = '/portfolio';
+
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
@@ -24,7 +26,7 @@ for (let p of pages) {
     let title = p.title;
 
     if (!ARE_WE_HOME && !url.startsWith('http')) {
-        url = '../' + url;
+      url = BASE_PATH + '/' + url;
     }
     
     let a = document.createElement('a');
