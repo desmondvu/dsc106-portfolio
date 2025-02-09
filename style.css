@@ -212,3 +212,68 @@ img {
   margin: 0 auto;
 
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+  flex: 1;
+}
+
+.legend{
+  display: grid;
+  width: 50em;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1rem;
+  border: 2px solid oklch(50% 10% 200 / 40%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.legend li{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+.swatch{
+  width: 1rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.searchBar{
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1rem;
+}
+
+svg:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}

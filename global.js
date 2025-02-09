@@ -27,6 +27,7 @@ for (let p of pages) {
 
     if (!ARE_WE_HOME && !url.startsWith('http')) {
       url = BASE_PATH + '/' + url;
+      "url = '../' + url;"
     }
     
     let a = document.createElement('a');
@@ -105,7 +106,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     article.innerHTML = `
       <h3>${project.title}</h3>
       <img src="${project.image}" alt="${project.title}">
-      <p>${project.description}</p>
+      <p>${project.description}</br>c. ${project.year}</p>
+
     `;
     
     containerElement.appendChild(article);
